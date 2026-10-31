@@ -1,0 +1,13 @@
+# Attribution and license boundaries
+
+- This fork builds on **vanch007/mlx-indextts2 v0.2.0**, commit `a7666367b8551656a2029ad75f259cb5e4936b3b`, under MIT. The original **Copyright (c) 2026 Didi** notice is retained verbatim in [LICENSE](LICENSE). Repository: https://github.com/vanch007/mlx-indextts2.
+- Changes in this fork include native reference DSP/W2V-BERT/CAMPPlus, optional reference dependencies, attention/precision fixes, Metal anti-aliasing, tests and benchmarks. Its original contributions are provided under MIT, except where an adapted third-party file retains its original license. Publication uses a clean source snapshot rather than private development history.
+- **IndexTTS / Bilibili**: https://github.com/index-tts/index-tts. The [Bilibili Model Use License Agreement](licenses/LicenseRef-bilibili.txt) applies separately to the model, applicable upstream final code and derivatives as defined in that agreement. This repository does not relicense those materials as MIT. Vendored upstream reference/conversion code under `mlx_indextts/indextts/` retains its original terms and any more specific notices. Model weights are not included. Review those terms, including commercial-use thresholds and downstream obligations, before using or distributing models or derivatives.
+- **3D-Speaker / CAMPPlus**: https://github.com/alibaba-damo-academy/3D-Speaker, Apache-2.0. Copyright notices remain in the reference modules and the adapted native CAMPPlus module. A full [Apache-2.0 license](licenses/Apache-2.0.txt) is included. The native module is marked as an MLX adaptation.
+- **Amphion**: https://github.com/open-mmlab/Amphion. Vendored codec modules preserve their Amphion copyright headers; [MIT license](licenses/Amphion-MIT.txt).
+- **NVIDIA BigVGAN**: https://github.com/NVIDIA/BigVGAN, [MIT license](licenses/BigVGAN-MIT.txt). The vocoder architecture and anti-alias filter implementation follow BigVGAN. The new Metal specialization is independently implemented here; it does not copy NVIDIA's CUDA kernel.
+- **W2V-BERT 2.0**: https://huggingface.co/facebook/w2v-bert-2.0. Obtain its weights separately and review its model card and MIT license. **CAMPPlus weights**: https://huggingface.co/funasr/campplus, Apache-2.0. Third-party dependencies retain their own licenses.
+
+Any modifications made to the original model in this Derivative Work are not endorsed, warranted, or guaranteed by the original right-holder of the original model, and the original right-holder disclaims all liability related to this Derivative Work.
+
+No model weights, reference recordings, generated audio, private transcripts, internal benchmark evidence, credentials or prior private git history are part of this source distribution.
