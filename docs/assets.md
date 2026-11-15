@@ -22,7 +22,7 @@ For native raw-WAV conditioning, obtain the original W2V-BERT config/weights and
 
 ```sh
 .venv-convert/bin/hf download facebook/w2v-bert-2.0 \
-  --include config.json model.safetensors \
+  config.json model.safetensors \
   --local-dir models/facebook-w2v-bert-2.0
 .venv-convert/bin/hf download funasr/campplus campplus_cn_common.bin \
   --revision e4b6ede7ce16997aff4ae69fbca1f0175e2afede \
